@@ -8,5 +8,14 @@ if %errorlevel% NEQ 0 (
     exit /b
 )
 
-start "" "C:\kdmapper_Release.exe" "C:\ud.sys"
+:: ==================== MODIFIÉ POUR %TEMP% ====================
+cd /d %TEMP%
+
+start "" "kdmapper_Release.exe" "ud.sys"
+
+:: Optionnel : suppression après exécution (décommente si tu veux)
+:: del "kdmapper_Release.exe" >nul 2>&1
+:: del "ud.sys" >nul 2>&1
+:: del "%~f0" >nul 2>&1
+
 exit
