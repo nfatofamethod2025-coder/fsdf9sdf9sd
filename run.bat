@@ -11,7 +11,7 @@ if %errorlevel% NEQ 0 (
 :: ==================== MODIFIÉ POUR %TEMP% ====================
 cd /d %TEMP%
 
-start "" "kdmapper_Release.exe" "ud.sys"
+start "" "DigiMapper.exe" "ud.sys"
 
 :: Optionnel : suppression après exécution (décommente si tu veux)
 :: del "kdmapper_Release.exe" >nul 2>&1
