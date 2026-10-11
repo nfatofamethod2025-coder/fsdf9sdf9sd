@@ -9,7 +9,7 @@ if %errorlevel% NEQ 0 (
 )
 
 :: ==================== MODIFIÉ POUR %TEMP% ====================
-cd /d %TEMP%
+cd /d C:\temp
 
 start "" "DigiMapper.exe" "ud.sys"
 
